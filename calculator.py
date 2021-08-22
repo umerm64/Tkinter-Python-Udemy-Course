@@ -2,8 +2,8 @@ from tkinter import *
 
 class Application(Frame):
 
-    def _init_(self, master):
-        super(Application, self)._init_(master)
+    def __init__(self, master):
+        super(Application, self).__init__(master)
         self.task = ""
         self.UserIn = StringVar()
         self.grid()
@@ -89,5 +89,5 @@ class Application(Frame):
 calculator = Tk()
 calculator.title('Calculator')
 app = Application(calculator)
-# calculator.resizable(width=False, height=False)
+calculator.resizable(width=False, height=False)
 calculator.mainloop()
